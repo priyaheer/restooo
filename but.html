@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Click Color Change</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f5f5f5;
+    }
+
+    #colorButton {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #colorButton.clicked {
+      background-color: #e67e22; 
+    }
+  </style>
+</head>
+<body>
+
+  <button id="colorButton">Click Me</button>
+  <script>
+    const colors = ['green', 'yellow', ]
+    const button = document.getElementById('colorButton');
+    const randomColor = Math.floor(Math.random(),)
+
+
+    button.addEventListener('click', function () {
+      button.classList.toggle('clicked');
+    });
+  </script>
+
+</body>
+</html>

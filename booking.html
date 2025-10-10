@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pihu's Restaurant | Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Lora:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="nav-logo">Pihu's Restoo</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section class="contact-section">
+    <h1 class="menu-title">Book a Table</h1>
+    <div class="contact-grid single-form">
+      <div class="contact-form">
+        <h2>Reserve Your Table</h2>
+        <form action="success.html" method="get">
+          <input type="text" placeholder="Your Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="date" required>
+          <input type="time" required>
+          <input type="number" min="1" max="20" placeholder="Number of Guests" required>
+          <textarea rows="4" placeholder="Any special request?"></textarea>
+          <button type="submit">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <p>&copy; 2025 Pihu's Restaurant. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
